@@ -1,1 +1,0 @@
-FROM --platform=linux/arm eclipse-mosquitto:1.6.7
