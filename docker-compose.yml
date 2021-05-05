@@ -9,6 +9,12 @@ volumes:
     octoprint-data:
     traefik:
 services:
+  doorbell:
+    restart: always
+    build: ./doorbell
+    network_mode: host
+    ports:
+      - "5050:5050"
   nodered:
     restart: always
     build: ./nodered
